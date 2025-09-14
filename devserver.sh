@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/bash
 source .venv/bin/activate
-python -u -m flask --app main run --debug
+streamlit run app.py --server.port $PORT --server.headless true --browser.serverAddress 0.0.0.0 --browser.gatherUsageStats false
